@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #18122B;
+}
+#particles-js{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-size: cover;
+}
+canvas {
+    position: fixed;
+    max-width:  100vw !important;
+}
+h1,h2,h3,p, li, input, textarea, button{
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+p,li, input, textarea{
+    font-size: 1.5rem;
+}
+button{
+    font-size: 1.2rem;
+}
+.fa{
+    font-size: 50px;
+}
+.content-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cta{
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    border: none;
+    padding: 20px;
+    color: #917fb384;
+}
+.cta:hover{
+    background-color: #917fb394;
+    color: white;
+    cursor: pointer;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+}
+section{
+    padding: 20px 50px;
+    min-height: 100vh;
+    max-height: fit-content;
+}
+/* section About */
+.container-center{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.small-container-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-pic{
+    max-width: 25%;
+    border-radius: 20px;
+    flex: 1;
+    margin: 100px;
+}
+#par{
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+}
+.portfolio-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100vw;
+}
+.portfolio-item{
+    width: 33%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.container-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+form,#social-media{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+input, textarea, select{
+    border-radius: 5px;
+    margin: 1px;
+}
+#success{
+    display: none;
+}
+.submit{
+    width: 50%;
+    align-self: flex-end;
+    margin-top: 10px;
+}
+#cutter{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 30%;
+    right: 0;
+}
+
+@media all and (max-width: 1000px){
+    #cutter{
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100vw;
+        position: fixed;
+        top: 20px;
+        right: auto;
+    }
+    ul{
+        padding: 0;
+    }
+    #par{
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+    .hero-pic{
+        margin: 10px;
+        max-width: 50%;
+    }
+    .container-center{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }    
+    .container-column-center{
+        margin-top: 5%;
+    }    
+    .portfolio-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 500px){
+    section{
+        padding: 0;
+        margin-top: 30%;
+    }
+    .container-column-center{
+        margin-top: 30%;
+    }    
+    .container-center,.container-column-center{
+        padding: 20px;
+    }
+    #par{
+        padding: 0;
+        margin: 20px;
+    }
+    h1{
+        font-size: 2.3rem;
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+    h3{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    p,li, button, input, textarea{
+        font-size: 1.2rem;
+    }  
+    .portfolio-item{
+        width: 80%;
+    }
+    .submit{
+        align-self: center;
+    }
+}
